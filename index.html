@@ -49,36 +49,49 @@
         <p class="font-black text-4xl">Adopt  Your  Best Friend</p>
         <p>It is a long established fact that a reader will be distracted by the readable content of a page <br> when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
     </div>
+<!-- button -->
 
-    <div class="flex flex-row justify-between mt-10">
-        <button class="flex flex-row justify-center items-center gap-3 px-10 py-2 border border-[#0E7A8126] rounded-2xl">
-            <img class="w-8" src="./images/shiba 1.png" alt="">
-            Dog
-        </button>
-        <button class="flex flex-row justify-center items-center gap-3 px-10 py-2 border border-[#0E7A8126] rounded-3xl">
-            <img class="w-8" src="./images/cat 1.png" alt="">
-            Cats
-        </button>
-        <button class="flex flex-row justify-center items-center gap-3 px-10 py-2 border border-[#0E7A8126] rounded-2xl">
-            <img class="w-8" src="./images/rabbit 1.png" alt=""> 
-            Rabbits
-        </button>
-        <button class="flex flex-row justify-center items-center gap-3 px-10 py-2 border border-[#0E7A8126] rounded-2xl">
-            <img class="w-8" src="./images/parrot 1.png" alt=""> 
-            Birds</button>
+    <div id="button_container" class="flex flex-row justify-between mt-10">
+
     </div>
-
     <div class="flex flex-row justify-between mt-10">
         <p class="text-[#131313] text-xl font-semibold">Best Deal For you</p>
         <button class="bg-[#0E7A81] px-4 py-1 text-white rounded-2xl">Sort by Price</button>
     </div>
 
-    <div id="all_items" class="grid grid-cols-3 gap-3">
-       
-
+   <div class="flex flex-row justify-between gap-3 ">
+    <div id="all_items" class=" grid grid-cols-3 gap-3 w-3/4">
         
 
     </div>
+
+    <div id="likebtn1" class="likebtn border border-red-600 w-1/4 mt-10">
+       
+    </div>
+
+
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="showdetailsss.showModal()">open modal</button> -->
+<dialog id="showdetailsss" class="modal modal-bottom sm:modal-middle">
+
+  <div class="modal-box" >
+    <div id="pet_details_container">
+        
+    
+    </div>
+    
+    <div class="modal-action w-full flex justify-center items-center  bg-[#0E7A8133] rounded-xl p-4">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="text-[#0E7A81] text-xl" >Cancel</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+</div>
+    
+    
+
     </main>
     <footer class="bg-[#131313] ">
         <div class="container mx-auto mt-10 px-6">
